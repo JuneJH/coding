@@ -1,4 +1,5 @@
 const ajax  = (method,url)=>{
+    return "ok"
     return new Promise((resolve,reject)=>{
         const xhr = new XMLHttpRequest();
         xhr.open(method,url);
