@@ -1,7 +1,15 @@
+/*
+ * @Author: June
+ * @Date: 2022-01-11 15:20:20
+ * @LastEditTime: 2022-01-13 14:38:59
+ * @LastEditors: June
+ * @Description: 
+ */
+const {fakeXhr} = require("nise")
 const ajax  = (method,url)=>{
-    return "ok"
     return new Promise((resolve,reject)=>{
-        const xhr = new XMLHttpRequest();
+        const xhr =  fakeXhr.useFakeXMLHttpRequest();
+        console.log(xhr)
         xhr.open(method,url);
         xhr.send();
         xhr.onreadystatechange = e=>{
@@ -15,7 +23,7 @@ const ajax  = (method,url)=>{
         }
     })
 }
-
+ajax("get","/call.js")
 module.exports = {
     ajax
 }

@@ -1,3 +1,10 @@
+/*
+ * @Author: June
+ * @Date: 2022-01-13 14:58:02
+ * @LastEditTime: 2022-01-13 14:58:56
+ * @LastEditors: June
+ * @Description: 
+ */
 // 快排
 function change(arr,left,right){
     const temp = arr[left];

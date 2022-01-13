@@ -1,3 +1,10 @@
+/*
+ * @Author: June
+ * @Date: 2022-01-13 14:56:45
+ * @LastEditTime: 2022-01-13 14:59:11
+ * @LastEditors: June
+ * @Description: 
+ */
 function compose (...fn){
     if(fn.length === 0){
         return args=>args
