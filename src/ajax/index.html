@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试ajax</title>
+</head>
+<body>
+<script src="/coding/src/ajax/index.js"></script>
+<script>
+async function init(){
+    const result = await  ajax("get","/coding/src/ajax/index.js");
+    console.log("result",result)
+}
+
+init();
+
+
+</script>
+</body>
+</html>
